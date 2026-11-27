@@ -1,0 +1,29 @@
+{
+  "name": "shyvo",
+  "version": "0.0.1",
+  "description": "Shyvo CLI: let Claude Code, Codex and other coding agents read, triage and fix your product's issues and feedback, and install the Shyvo feedback widget.",
+  "type": "module",
+  "bin": {
+    "shyvo": "bin/shyvo.mjs"
+  },
+  "scripts": {
+    "sync-skills": "node scripts/sync-skills.mjs",
+    "prepack": "node scripts/sync-skills.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "skills",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwancodes/shyvo-cli.git"
+  },
+  "homepage": "https://shyvo.app/docs/cli-agents",
+  "keywords": ["shyvo", "cli", "claude-code", "codex", "agent-skills", "feedback"]
+}
